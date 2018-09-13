@@ -11,14 +11,11 @@ import qualified GHC.Base                       ( (.)
                                                 , id
                                                 )
 import qualified Prelude                       as P
-                                                ( IO
-                                                , Int
+                                                ( Int
                                                 , Monad(..)
                                                 , undefined
                                                 )
 
-main :: P.IO ()
-main = P.undefined
 
 class Category cat where
   id :: a `cat` a
